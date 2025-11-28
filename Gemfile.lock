@@ -154,6 +154,7 @@ GEM
     pg (1.6.2-aarch64-linux)
     pg (1.6.2-arm64-darwin)
     pg (1.6.2-x86_64-darwin)
+    pg (1.6.2-x86_64-linux)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
@@ -249,6 +250,7 @@ PLATFORMS
   aarch64-linux
   arm64-darwin-21
   x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
