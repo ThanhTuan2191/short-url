@@ -39,11 +39,11 @@ RAILS_ENV=test bin/rails db:migrate
 Create a `.env` file or export these variables:
 
 ```bash
-# Custom domain for generated short URLs (default: http://localhost:3000)
+# default: http://localhost:3000
 export BASE_DOMAIN=https://your-domain.com
 
-# Custom short code length (default: 8)
-export SHORT_CODE_LENGTH=6
+# Custom short code length
+export SHORT_CODE_LENGTH=8
 ```
 
 ## Running the Application
