@@ -14,11 +14,11 @@ module Api
       private
 
       def encode_params
-        params.require(:short_url).permit(:original_url).to_h.symbolize_keys
+        params.require(:short_url).permit(:original_url)
       end
 
       def decode_params
-        params.require(:short_url).permit(:full_short_url).to_h.symbolize_keys
+        params.require(:short_url).permit(:full_short_url)
       end
     end
   end

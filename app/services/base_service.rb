@@ -4,6 +4,10 @@ class BaseService
   end
 
   def initialize **args
-    @params = args
+    @params = args.to_h.symbolize_keys
   end
+
+  private
+
+  attr_reader :params
 end

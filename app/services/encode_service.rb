@@ -6,8 +6,6 @@ class EncodeService < BaseService
 
   private 
 
-  attr_reader :params
-
   def validate!
     raise Api::Errors::InvalidLinkError.new('Your link is invalid. Please check it again') unless valid_link?
   end

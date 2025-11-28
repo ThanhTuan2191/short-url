@@ -6,8 +6,6 @@ class DecodeService < BaseService
 
   private
 
-  attr_reader :params
-
   def validate!
     raise Api::Errors::InvalidLinkError.new('Short URL is required') if short_url_param.blank?
     raise Api::Errors::InvalidLinkError.new('Invalid short URL format') unless valid_format?
